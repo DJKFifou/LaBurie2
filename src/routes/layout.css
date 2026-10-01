@@ -1,1 +1,14 @@
 @import 'tailwindcss';
+
+@theme {
+	--color-theme-dark: #181818;
+	--color-theme-grey: #52514d;
+	--color-theme-light: #f8f8f8;
+	--color-theme-offWhite: #f8f4e6;
+	--color-theme-green: #544a23;
+}
+
+@utility h-screen-dvh {
+	height: 100vh;
+	height: 100dvh;
+}

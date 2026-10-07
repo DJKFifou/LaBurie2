@@ -1,4 +1,55 @@
 {
-	"$schema": "https://inlang.com/schema/inlang-message-format",
-	"hello_world": "Hello, {name} from fr!"
+	"homepage": {
+		"hero": {
+			"link": {
+				"title": "Réserver votre séjour"
+			}
+		},
+		"about": {
+			"first_block": {
+				"first_paragraph": "La Burie est un magnifique manoir du XIXe siècle plein de charme, soigneusement rénové et décoré avec un mélange de mobilier vintage, familial et contemporain.",
+				"second_paragraph": "Les chambres d'hôtes se composent de deux superbes suites flambant neuves situées au deuxième étage, sous les combles, et d'une suite familiale au rez-de-chaussée.",
+				"third_paragraph": "La propriété est située juste à la sortie du village de Saint-Savinien, à 1,5 km du centre."
+			},
+			"second_block": {
+				"first_paragraph": "La maison d'hôtes propose deux chambres doubles spacieuses au deuxième étage, situées sous les combles, ainsi qu'une grande suite familiale au rez-de-chaussée pouvant accueillir jusqu'à six personnes.",
+				"second_paragraph": "Toutes les chambres offrent une vue sur le jardin."
+			},
+			"link": {
+				"title": "Réserver votre séjour"
+			}
+		},
+		"marquee": {
+			"first_word": "Manger",
+			"second_word": "Dormir",
+			"third_word": "Répéter"
+		},
+		"informations_cards": {
+			"first_card": {
+				"title": "Petit-déjeuner préparé avec amour",
+				"description": "Venez déguster un délicieux petit-déjeuner préparé avec soin, à base de produits locaux et de saison, de pain frais, de yaourts maison et de confitures."
+			},
+			"second_card": {
+				"title": "Sommeil réparateur",
+				"description": "Profitez d'une nuit de sommeil incomparable grâce à nos draps en coton haut de gamme. Ils vous garantissent un confort optimal pour une nuit reposante."
+			},
+			"third_card": {
+				"title": "Sérénité dans le jardin",
+				"description": "Découvrez de nombreux coins de détente disséminés dans le jardin. Des terrasses ensoleillées ou ombragées, idéales pour les repas en plein air ou pour s'adonner à la lecture."
+			},
+			"link": {
+				"title": "Réserver votre séjour"
+			}
+		},
+		"contact": {
+			"title": "Envie de vous détendre dans le plus grand confort ? <br> Organisons ensemble votre escapade idéale.",
+			"form": {
+				"name": "Nom",
+				"email": "Email",
+				"phone": "Téléphone",
+				"message": "Message",
+				"submit": "Envoyer"
+			}
+		}
+	}
 }

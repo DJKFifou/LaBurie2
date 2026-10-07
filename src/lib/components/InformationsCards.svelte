@@ -1,31 +1,30 @@
 <script lang="ts">
+    import { m } from '$lib/paraglide/messages.js';
+    
 	const cards = [
 		{
 			image: {
 				url: '/src/lib/assets/images/LaBurie_Icon_Breakfast.webp',
-				alt: 'Breakfast'
+				alt: m['homepage.informations_cards.first_card.title']()
 			},
-			title: 'Breakfast crafted with love',
-			description:
-				'Enjoy a delicious breakfast made with care, featuring local and seasonal products, fresh bread, homemade yogurt, and jams.'
+			title: m['homepage.informations_cards.first_card.title'](),
+			description: m['homepage.informations_cards.first_card.description']()
 		},
 		{
 			image: {
 				url: '/src/lib/assets/images/LaBurie_Icon_Sleep.webp',
-				alt: 'Restful sleep'
+				alt: m['homepage.informations_cards.second_card.title']()
 			},
-			title: 'Restful sleep',
-			description:
-				'Enjoy an unparalleled night’s sleep with our premium high-quality cotton sheets. They ensure optimal comfort for a restful night.'
+			title: m['homepage.informations_cards.second_card.title'](),
+			description: m['homepage.informations_cards.second_card.description']()
 		},
 		{
 			image: {
 				url: '/src/lib/assets/images/LaBurie_Icon_Garden.webp',
-				alt: 'Serenity in the garden'
+				alt: m['homepage.informations_cards.third_card.title']()
 			},
-			title: 'Serenity in the garden',
-			description:
-				'Discover numerous relaxing spots throughout the garden. Sunny or shaded terraces, perfect for outdoor meals or moments of reading.'
+			title: m['homepage.informations_cards.third_card.title'](),
+			description: m['homepage.informations_cards.third_card.description']()
 		}
 	];
 
@@ -58,6 +57,6 @@
 	<a
 		href="#"
 		class="w-fit rounded-full bg-theme-green px-14 py-2 text-theme-offWhite hover:bg-theme-light hover:text-theme-green"
-		>Book a your stay</a
+		>{m['homepage.informations_cards.link.title']()}</a
 	>
 </section>

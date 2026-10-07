@@ -1,17 +1,50 @@
+<script lang="ts">
+	import { m } from '$lib/paraglide/messages.js';
+
+	async function handleSubmit(event: SubmitEvent) {
+		event.preventDefault();
+
+		const form = event.currentTarget as HTMLFormElement;
+		const formData = new FormData(form);
+
+		const data = Object.fromEntries(formData.entries());
+
+		try {
+			const response = await fetch('/api/contact', {
+				method: 'POST',
+				headers: {
+					'Content-Type': 'application/json'
+				},
+				body: JSON.stringify(data)
+			});
+
+			const result = await response.json();
+
+			if (!response.ok) {
+				throw new Error(result.error || 'Une erreur est survenue.');
+			}
+
+			console.log('Message envoyé !');
+
+			form.reset();
+		} catch (error) {
+			console.error(error);
+		}
+	}
+</script>
+
 <section class="flex gap-10 py-40 px-20">
     <div class="flex-1 flex flex-col justify-end items-center text-center gap-20">
         <div class="flex flex-col gap-6 w-full max-w-xl">
-            <h3>
-                Ready to unwind in comfort? 
-                <br />
-                Let’s create your perfect getaway.
+            <h3 class="text-2xl font-medium">
+                {@html m['homepage.contact.title']()}
             </h3>
-            <form action="" class="flex flex-col gap-4">
-                <input type="text" placeholder="Name" id="name" name="name" class="border-2 py-2 px-6" />
-                <input type="email" placeholder="Email" id="email" name="email" class="border-2 py-2 px-6" />
-                <input type="phone" placeholder="Phone" id="phone" name="phone" class="border-2 py-2 px-6" />
-                <textarea placeholder="Message" id="message" name="message" class="border-2 py-2 px-6"></textarea>
-                <button type="submit" class="mt-4 py-4 w-full bg-theme-grey text-theme-light rounded-full cursor-pointer">Send</button>
+            <form class="flex flex-col gap-4" onsubmit={handleSubmit}>
+                <input type="text" placeholder={m['homepage.contact.form.name']()} id="name" name="name" class="border-2 py-2 px-6" required />
+                <input type="email" placeholder={m['homepage.contact.form.email']()} id="email" name="email" class="border-2 py-2 px-6" required />
+                <input type="phone" placeholder={m['homepage.contact.form.phone']()} id="phone" name="phone" class="border-2 py-2 px-6" required />
+                <textarea placeholder={m['homepage.contact.form.message']()} id="message" name="message" class="border-2 py-2 px-6" required></textarea>
+                <button type="submit" class="mt-4 py-4 w-full bg-theme-grey text-theme-light rounded-full cursor-pointer">{m['homepage.contact.form.submit']()}</button>
             </form>
         </div>
         <img src="/src/lib/assets/images/LaBurie_Logo_Black.webp" alt="" class="h-50 object-contain" />

@@ -1,4 +1,55 @@
 {
-	"$schema": "https://inlang.com/schema/inlang-message-format",
-	"hello_world": "Hello, {name} from en!"
+	"homepage": {
+		"hero": {
+			"link": {
+				"title": "Book a your stay"
+			}
+		},
+		"about": {
+			"first_block": {
+				"first_paragraph": "La Burie is a grand and charming manor house from the 19th century, carefully renovated and decorated with a mix of vintage, family, and contemporary furniture.",
+				"second_paragraph": "The guest rooms consist of two beautiful, brand-new suites on the second floor under the eaves, and a family suite on the first floor.",
+				"third_paragraph": "The property is located just outside the village of Saint-Savinien, 1.5 km from the center."
+			},
+			"second_block": {
+				"first_paragraph": "The guesthouse offers two spacious double rooms on the second floor, located under the roof, as well as a large family suite on the first floor that can accommodate up to six people.",
+				"second_paragraph": "All rooms enjoy garden views."
+			},
+			"link": {
+				"title": "Book a your stay"
+			}
+		},
+		"marquee": {
+			"first_word": "Eat",
+			"second_word": "Sleep",
+			"third_word": "Repeat"
+		},
+		"informations_cards": {
+			"first_card": {
+				"title": "Breakfast crafted with love",
+				"description": "Enjoy a delicious breakfast made with care, featuring local and seasonal products, fresh bread, homemade yogurt, and jams."
+			},
+			"second_card": {
+				"title": "Restful sleep",
+				"description": "Enjoy an unparalleled night’s sleep with our premium high-quality cotton sheets. They ensure optimal comfort for a restful night."
+			},
+			"third_card": {
+				"title": "Serenity in the garden",
+				"description": "Discover numerous relaxing spots throughout the garden. Sunny or shaded terraces, perfect for outdoor meals or moments of reading."
+			},
+			"link": {
+				"title": "Book a your stay"
+			}
+		},
+		"contact": {
+			"title": "Ready to unwind in comfort? <br> Let’s create your perfect getaway.",
+			"form": {
+				"name": "Name",
+				"email": "Email",
+				"phone": "Phone",
+				"message": "Message",
+				"submit": "Send"
+			}
+		}
+	}
 }

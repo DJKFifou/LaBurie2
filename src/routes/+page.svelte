@@ -1,4 +1,5 @@
 <script lang="ts">
+    import { m } from '$lib/paraglide/messages.js';
 	import Hero from '$lib/components/Hero.svelte';
 	import About from '$lib/components/About.svelte';
 	import Marquee from '$lib/components/Marquee.svelte';
@@ -22,9 +23,9 @@
 <About />
 <Marquee>
 	<div class="flex gap-4 bg-theme-green py-2 pr-4 text-theme-offWhite uppercase">
-		{@render Word('Eat')}
-		{@render Word('Sleep')}
-		{@render Word('Repeat')}
+		{@render Word(m['homepage.marquee.first_word']())}
+		{@render Word(m['homepage.marquee.second_word']())}
+		{@render Word(m['homepage.marquee.third_word']())}
 	</div>
 </Marquee>
 <Gallery images={data.gallery} />

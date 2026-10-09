@@ -1,5 +1,5 @@
 <script lang="ts">
-    import arrow from '$lib/assets/images/arrow.svg';
+    import arrow from '$lib/assets/arrow.svg';
 	import Swiper from 'swiper';
 	import { Navigation } from 'swiper/modules';
 	import 'swiper/css';

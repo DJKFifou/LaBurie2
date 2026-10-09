@@ -37,7 +37,7 @@
 <section class="bg-theme-offWhite pb-5 px-5 pt-30">
 	<div class="swiper h-175 w-full md:w-225">
 		<div class="swiper-wrapper">
-			{#each gallery as image (image)}
+			{#each gallery as image, i (i)}
 				<div class="swiper-slide">
 					<img src={image} alt="" class="h-full w-full object-cover" />
 				</div>

@@ -1,12 +1,13 @@
 <script>
     import { m } from '$lib/paraglide/messages.js';
+    import logoWhite from '$lib/assets/images/LaBurie_Logo_White.webp';
 </script>
 
 <section
 	class="flex h-screen-dvh flex-col items-center justify-center gap-30 bg-theme-green text-center p-10"
 >
 	<img
-		src="/src/lib/assets/images/LaBurie_Logo_White.webp"
+		src={logoWhite}
 		alt=""
 		class="w-full max-w-lg object-contain"
 	/>

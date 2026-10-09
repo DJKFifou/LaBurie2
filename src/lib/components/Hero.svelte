@@ -10,7 +10,7 @@
 		alt=""
 		class="w-full max-w-lg object-contain"
 	/>
-	<a href="#" class="rounded-full bg-theme-offWhite px-14 py-2 text-theme-green hover:brightness-85"
+	<a href="https://reservation.elloha.com/?idPublication=e91f5f11-7560-453d-9b21-c9fdb924680c&idoi=b7073d26-a843-4537-b5db-fa0692fe33c5" class="rounded-full bg-theme-offWhite px-14 py-2 text-theme-green hover:brightness-85"
 		>{m['homepage.hero.link.title']()}</a
 	>
 </section>

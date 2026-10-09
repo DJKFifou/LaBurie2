@@ -4,36 +4,42 @@
 	import 'swiper/css';
 	import 'swiper/css/navigation';
 
-	let { images } = $props();
+    let gallery = Object.values(
+        import.meta.glob(
+            '$lib/assets/gallery/*.{png,jpg,jpeg,webp,avif}',
+            {
+            eager: true,
+            query: '?url',
+            import: 'default'
+            }
+        )
+    );
 
 	new Swiper('.swiper', {
-		loop: true,
-		slidesPerView: 2,
-		slidesPerGroup: 2,
-		spaceBetween: 20,
-		modules: [Navigation],
-		navigation: {
-			nextEl: '.swiper-button-next',
-			prevEl: '.swiper-button-prev'
-		}
-	});
-
-	interface ImageType {
-		url: string;
-		alt: string;
-	}
+    loop: true,
+    slidesPerView: 1,
+    slidesPerGroup: 1,
+    spaceBetween: 20,
+    modules: [Navigation],
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev'
+    },
+    breakpoints: {
+        768: {
+            slidesPerView: 2,
+            slidesPerGroup: 2
+        }
+    }
+});
 </script>
 
-{#snippet Image(image: ImageType)}
-	<img src={image.url} alt={image.alt} class="h-full w-full object-cover" />
-{/snippet}
-
-<section class="pt-30 bg-theme-offWhite">
-	<div class="swiper h-175 w-225">
+<section class="bg-theme-offWhite pb-5 px-5 pt-30">
+	<div class="swiper h-175 w-full md:w-225">
 		<div class="swiper-wrapper">
-			{#each images as image (image.id)}
+			{#each gallery as image (image)}
 				<div class="swiper-slide">
-					{@render Image(image)}
+					<img src={image} alt="" class="h-full w-full object-cover" />
 				</div>
 			{/each}
 		</div>

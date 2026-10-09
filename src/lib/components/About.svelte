@@ -2,7 +2,7 @@
     import { m } from '$lib/paraglide/messages.js';
 </script>
 
-<section class="flex h-screen-dvh items-center gap-16 p-20">
+<section class="flex flex-col md:flex-row min-h-screen-dvh items-center gap-16 pt-10 pb-20 px-5 md:px-10 lg:p-20 overflow-hidden">
 	<div class="relative h-full flex-1">
 		<img
 			src="/src/lib/assets/images/LaBurie_About.webp"
@@ -12,11 +12,11 @@
 		<img
 			src="/src/lib/assets/images/LaBurie_Tampon_green.webp"
 			alt=""
-			class="absolute right-0 bottom-10 w-50 translate-x-1/2 object-contain"
+			class="absolute -right-4 md:right-0 bottom-0 md:bottom-10 w-30 md:w-50 translate-y-1/2 md:translate-y-0 md:translate-x-1/2 object-contain"
 		/>
 	</div>
-	<div class="flex flex-1 flex-col items-center justify-center gap-25 text-center">
-		<div class="flex flex-col items-center gap-4 text-lg px-10">
+	<div class="flex flex-1 flex-col items-center justify-center gap-15 md:gap-25 text-center">
+		<div class="flex flex-col items-center gap-4 text-lg px-5 md:px-10">
 			<div class="flex flex-col items-center gap-4">
 				<hr class="my-4 w-3/5 border" />
 				<p>

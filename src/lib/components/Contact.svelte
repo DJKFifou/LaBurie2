@@ -33,8 +33,8 @@
 	}
 </script>
 
-<section class="flex gap-10 py-40 px-20">
-    <div class="flex-1 flex flex-col justify-end items-center text-center gap-20">
+<section class="flex flex-col-reverse md:flex-row gap-10 py-20 md:py-40 px-5 md:px-10 lg:px-20">
+    <div class="flex-1 flex flex-col justify-end items-center text-center gap-10 md:gap-20">
         <div class="flex flex-col gap-6 w-full max-w-xl">
             <h3 class="text-2xl font-medium">
                 {@html m['homepage.contact.title']()}
@@ -50,7 +50,7 @@
         <img src="/src/lib/assets/images/LaBurie_Logo_Black.webp" alt="" class="h-50 object-contain" />
     </div>
     <div class="flex-1 relative">
-        <img src="/src/lib/assets/images/LaBurie_Contact.webp" alt="" class="w-full h-225 object-cover" />
-        <img src="/src/lib/assets/images/LaBurie_Tampon_brown.webp" alt="" class="absolute inset-0 w-50 -translate-1/2 object-contain" />
+        <img src="/src/lib/assets/images/LaBurie_Contact.webp" alt="" class="w-full h-125 md:h-225 object-cover" />
+        <img src="/src/lib/assets/images/LaBurie_Tampon_brown.webp" alt="" class="absolute top-0 left-4 md:inset-0 w-30 md:w-50 -translate-y-1/2 md:*:-translate-1/2 object-contain" />
     </div>
 </section>

@@ -7,13 +7,6 @@ export const POST: RequestHandler = async ({ request, fetch }) => {
 
 	const { name, email, phone, message } = data;
 
-	console.log('Brevo key info:', {
-		exists: !!env.BREVO_API_KEY,
-		length: env.BREVO_API_KEY?.length,
-		start: env.BREVO_API_KEY?.slice(0, 10),
-		end: env.BREVO_API_KEY?.slice(-5)
-	});
-
 	if (
 		!name ||
 		!email ||

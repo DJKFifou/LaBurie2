@@ -7,9 +7,6 @@
 	import InformationsCards from '$lib/components/InformationsCards.svelte';
 	import ImageFull from '$lib/components/ImageFull.svelte';
 	import Contact from '$lib/components/Contact.svelte';
-
-	let { data } = $props();
-	console.log('data:', data);
 </script>
 
 {#snippet Word(word: string)}
@@ -28,7 +25,7 @@
 		{@render Word(m['homepage.marquee.third_word']())}
 	</div>
 </Marquee>
-<Gallery images={data.gallery} />
+<Gallery />
 <InformationsCards />
 <ImageFull />
 <Contact />

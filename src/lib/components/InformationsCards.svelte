@@ -48,8 +48,8 @@
 	</div>
 {/snippet}
 
-<section class="flex flex-col items-center gap-22 bg-theme-offWhite px-20 py-30">
-	<div class="flex gap-16">
+<section class="flex flex-col items-center gap-22 bg-theme-offWhite p-10 pb-20 md:px-20 md:py-30">
+	<div class="flex flex-col md:flex-row gap-16">
 		{#each cards as card, i (i)}
 			{@render Card(card)}
 		{/each}

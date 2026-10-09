@@ -3,7 +3,7 @@
 </script>
 
 <section
-	class="flex h-screen-dvh flex-col items-center justify-center gap-30 bg-theme-green text-center"
+	class="flex h-screen-dvh flex-col items-center justify-center gap-30 bg-theme-green text-center p-10"
 >
 	<img
 		src="/src/lib/assets/images/LaBurie_Logo_White.webp"

@@ -24,6 +24,14 @@ jobs:
           name: build-artifacts
           path: build
           retention-days: 1
+      - name: Upload production manifests
+        uses: actions/upload-artifact@v4
+        with:
+          name: production-manifests
+          path: |
+            package.json
+            package-lock.json
+          retention-days: 1
   deploy:
     name: Deploy project
     permissions:

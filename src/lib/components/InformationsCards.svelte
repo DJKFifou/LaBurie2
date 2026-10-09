@@ -1,10 +1,13 @@
 <script lang="ts">
     import { m } from '$lib/paraglide/messages.js';
-    
+    import breakfastIcon from '$lib/assets/images/LaBurie_Icon_Breakfast.webp';
+    import sleepIcon from '$lib/assets/images/LaBurie_Icon_Sleep.webp';
+    import gardenIcon from '$lib/assets/images/LaBurie_Icon_Garden.webp';
+
 	const cards = [
 		{
 			image: {
-				url: '/src/lib/assets/images/LaBurie_Icon_Breakfast.webp',
+				url: breakfastIcon,
 				alt: m['homepage.informations_cards.first_card.title']()
 			},
 			title: m['homepage.informations_cards.first_card.title'](),
@@ -12,7 +15,7 @@
 		},
 		{
 			image: {
-				url: '/src/lib/assets/images/LaBurie_Icon_Sleep.webp',
+				url: sleepIcon,
 				alt: m['homepage.informations_cards.second_card.title']()
 			},
 			title: m['homepage.informations_cards.second_card.title'](),
@@ -20,7 +23,7 @@
 		},
 		{
 			image: {
-				url: '/src/lib/assets/images/LaBurie_Icon_Garden.webp',
+				url: gardenIcon,
 				alt: m['homepage.informations_cards.third_card.title']()
 			},
 			title: m['homepage.informations_cards.third_card.title'](),

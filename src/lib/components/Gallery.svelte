@@ -1,4 +1,5 @@
 <script lang="ts">
+    import arrow from '$lib/assets/images/arrow.svg';
 	import Swiper from 'swiper';
 	import { Navigation } from 'swiper/modules';
 	import 'swiper/css';
@@ -44,10 +45,10 @@
 			{/each}
 		</div>
 		<div class="swiper-button-prev w-15! h-15! ml-2! bg-black/30 rounded-full">
-            <img src="/src/lib/assets/arrow.svg" alt="Previous" class="w-full h-full" />
+            <img src={arrow} alt="Previous" class="w-full h-full" />
         </div>
 		<div class="swiper-button-next w-15! h-15! mr-2! bg-black/30 rounded-full">
-            <img src="/src/lib/assets/arrow.svg" alt="Next" class="rotate-180 w-full h-full" />
+            <img src={arrow} alt="Next" class="rotate-180 w-full h-full" />
         </div>
 	</div>
 </section>

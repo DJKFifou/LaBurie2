@@ -1,5 +1,8 @@
 <script lang="ts">
 	import { m } from '$lib/paraglide/messages.js';
+    import logoBlack from '$lib/assets/images/LaBurie_Logo_Black.webp';
+    import contactImage from '$lib/assets/images/LaBurie_Contact.webp';
+    import brownTampon from '$lib/assets/images/LaBurie_Tampon_brown.webp';
 
 	async function handleSubmit(event: SubmitEvent) {
 		event.preventDefault();
@@ -47,10 +50,10 @@
                 <button type="submit" class="mt-4 py-4 w-full bg-theme-grey text-theme-light rounded-full cursor-pointer">{m['homepage.contact.form.submit']()}</button>
             </form>
         </div>
-        <img src="/src/lib/assets/images/LaBurie_Logo_Black.webp" alt="" class="h-50 object-contain" />
+        <img src={logoBlack} alt="" class="h-50 object-contain" />
     </div>
     <div class="flex-1 relative">
-        <img src="/src/lib/assets/images/LaBurie_Contact.webp" alt="" class="w-full h-125 md:h-225 object-cover" />
-        <img src="/src/lib/assets/images/LaBurie_Tampon_brown.webp" alt="" class="absolute top-0 left-4 md:inset-0 w-30 md:w-50 -translate-y-1/2 md:*:-translate-1/2 object-contain" />
+        <img src={contactImage} alt="" class="w-full h-125 md:h-225 object-cover" />
+        <img src={brownTampon} alt="" class="absolute top-0 left-4 md:inset-0 w-30 md:w-50 -translate-y-1/2 md:*:-translate-1/2 object-contain" />
     </div>
 </section>

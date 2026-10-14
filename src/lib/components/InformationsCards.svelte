@@ -1,13 +1,10 @@
 <script lang="ts">
     import { m } from '$lib/paraglide/messages.js';
-    import breakfastIcon from '$lib/assets/images/LaBurie_Icon_Breakfast.webp';
-    import sleepIcon from '$lib/assets/images/LaBurie_Icon_Sleep.webp';
-    import gardenIcon from '$lib/assets/images/LaBurie_Icon_Garden.webp';
 
 	const cards = [
 		{
 			image: {
-				url: breakfastIcon,
+				url: "/images/LaBurie_Icon_Breakfast.webp",
 				alt: m['homepage.informations_cards.first_card.title']()
 			},
 			title: m['homepage.informations_cards.first_card.title'](),
@@ -15,7 +12,7 @@
 		},
 		{
 			image: {
-				url: sleepIcon,
+				url: "/images/LaBurie_Icon_Sleep.webp",
 				alt: m['homepage.informations_cards.second_card.title']()
 			},
 			title: m['homepage.informations_cards.second_card.title'](),
@@ -23,7 +20,7 @@
 		},
 		{
 			image: {
-				url: gardenIcon,
+				url: "/images/LaBurie_Icon_Garden.webp",
 				alt: m['homepage.informations_cards.third_card.title']()
 			},
 			title: m['homepage.informations_cards.third_card.title'](),
@@ -44,7 +41,7 @@
 {#snippet Card(card: CardType)}
 	<div class="flex flex-1 flex-col gap-3">
 		<div class="flex flex-col gap-1">
-			<img src={card.image.url} alt={card.image.alt} class="w-20 object-contain" />
+			<img src={card.image.url} alt={card.image.alt} class="w-15 md:w-20 object-contain" />
 			<h3 class="text-2xl font-semibold">{card.title}</h3>
 		</div>
 		<p class="text-lg">{card.description}</p>

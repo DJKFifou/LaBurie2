@@ -1,10 +1,6 @@
-<script lang="ts">
-    import backgroundImage from '$lib/assets/images/LaBurie_Background.webp';
-</script>
-
 <section class="h-screen-dvh">
 	<img
-		src={backgroundImage}
+		src="/images/LaBurie_Background.webp"
 		alt=""
 		class="h-full w-full object-cover"
 	/>

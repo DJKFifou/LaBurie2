@@ -1,18 +1,16 @@
 <script lang="ts">
     import { m } from '$lib/paraglide/messages.js';
-    import aboutImage from '$lib/assets/images/LaBurie_About.webp';
-    import greenTampon from '$lib/assets/images/LaBurie_Tampon_green.webp';
 </script>
 
 <section class="flex flex-col md:flex-row min-h-screen-dvh items-center gap-16 pt-10 pb-20 px-5 md:px-10 lg:p-20 overflow-hidden">
 	<div class="relative h-full flex-1">
 		<img
-			src={aboutImage}
+			src="/images/LaBurie_About.webp"
 			alt=""
 			class="h-full w-full object-cover"
 		/>
 		<img
-			src={greenTampon}
+			src="/images/LaBurie_Tampon_green.webp"
 			alt=""
 			class="absolute -right-4 md:right-0 bottom-0 md:bottom-10 w-30 md:w-50 translate-y-1/2 md:translate-y-0 md:translate-x-1/2 object-contain"
 		/>

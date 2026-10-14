@@ -35,7 +35,7 @@
             },
 
             breakpoints: {
-                768: {
+                1024: {
                     slidesPerView: 2,
                     slidesPerGroup: 2
                 }
@@ -49,7 +49,7 @@
 </script>
 
 <section class="bg-theme-offWhite pb-5 px-5 pt-30">
-	<div class="swiper h-175 w-full md:w-225">
+	<div class="swiper h-175 w-full lg:w-225">
 		<div class="swiper-wrapper">
 			{#if mounted}
                 {#each gallery as image, i (i)}

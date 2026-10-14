@@ -1,22 +1,27 @@
 <script lang="ts">
-    import { onMount } from 'svelte';
-	import Swiper from 'swiper';
-	import { Navigation } from 'swiper/modules';
-	import 'swiper/css';
-	import 'swiper/css/navigation';
+    import { onMount, tick } from 'svelte';
+    import Swiper from 'swiper';
+    import { Navigation } from 'swiper/modules';
+    import 'swiper/css';
+    import 'swiper/css/navigation';
 
-    let gallery = Object.values(
-        import.meta.glob(
-            '/src/lib/gallery/*.{png,jpg,jpeg,webp,avif}',
-            {
+    let mounted = $state(false);
+
+    const gallery = Object.entries(
+        import.meta.glob('/src/lib/gallery/*.{png,jpg,jpeg,webp,avif}', {
             eager: true,
             query: '?url',
             import: 'default'
-            }
-        )
-    );
+        })
+    )
+        .sort(([a], [b]) => a.localeCompare(b))
+        .map(([, url]) => url as string);
 
-	onMount(() => {
+    onMount(async () => {
+        mounted = true;
+
+        await tick();
+        
         const swiper = new Swiper('.swiper', {
             modules: [Navigation],
             loop: true,
@@ -46,11 +51,17 @@
 <section class="bg-theme-offWhite pb-5 px-5 pt-30">
 	<div class="swiper h-175 w-full md:w-225">
 		<div class="swiper-wrapper">
-			{#each gallery as image, i (i)}
-				<div class="swiper-slide">
-					<img src={image} alt="" class="h-full w-full object-cover" />
-				</div>
-			{/each}
+			{#if mounted}
+                {#each gallery as image, i (i)}
+                    <div class="swiper-slide">
+                        <img
+                            src={image}
+                            alt=""
+                            class="h-full w-full object-cover"
+                        />
+                    </div>
+                {/each}
+            {/if}
 		</div>
 		<div class="swiper-button-prev w-15! h-15! ml-2! bg-black/30 rounded-full">
             <img src="arrow.svg" alt="Previous" class="w-full h-full" />

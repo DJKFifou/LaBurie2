@@ -76,7 +76,7 @@
                 </p>
             {/if}
         </div>
-        <img src="/images/LaBurie_Logo_Black.webp" alt="" class="h-50 object-contain" />
+        <img src="/images/LaBurie_Logo_Black.webp" alt="" class="h-35 md:h-50 object-contain" />
     </div>
     <div class="flex-1 relative">
         <img src="/images/LaBurie_Contact.webp" alt="" class="w-full h-125 md:h-225 object-cover" />

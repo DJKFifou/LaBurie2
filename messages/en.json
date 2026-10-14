@@ -2,7 +2,7 @@
 	"homepage": {
 		"hero": {
 			"link": {
-				"title": "Book a your stay"
+				"title": "Book your stay"
 			}
 		},
 		"about": {
@@ -16,7 +16,7 @@
 				"second_paragraph": "All rooms enjoy garden views."
 			},
 			"link": {
-				"title": "Book a your stay"
+				"title": "Book your stay"
 			}
 		},
 		"marquee": {
@@ -38,7 +38,7 @@
 				"description": "Discover numerous relaxing spots throughout the garden. Sunny or shaded terraces, perfect for outdoor meals or moments of reading."
 			},
 			"link": {
-				"title": "Book a your stay"
+				"title": "Book your stay"
 			}
 		},
 		"contact": {

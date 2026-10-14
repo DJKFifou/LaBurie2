@@ -10,7 +10,10 @@
 	let { children } = $props();
 </script>
 
-<svelte:head><link rel="icon" href={favicon} /></svelte:head>
+<svelte:head>
+	<title>La Burie - Chambres d'hôtes à Saint-Savinien</title>
+	<link rel="icon" href={favicon} />
+</svelte:head>
 
 <div style="display:none">
 	{#each locales as locale (locale)}

@@ -1,13 +1,18 @@
 <script lang="ts">
 	import { m } from '$lib/paraglide/messages.js';
 
+    let formResponse: string | null = $state(null);
+    let formStatus: 'success' | 'error' | null = $state(null);
+
 	async function handleSubmit(event: SubmitEvent) {
 		event.preventDefault();
 
 		const form = event.currentTarget as HTMLFormElement;
 		const formData = new FormData(form);
-
 		const data = Object.fromEntries(formData.entries());
+
+        formResponse = null;
+        formStatus = null;
 
 		try {
 			const response = await fetch('/api/contact', {
@@ -21,14 +26,20 @@
 			const result = await response.json();
 
 			if (!response.ok) {
-				throw new Error(result.error || 'Une erreur est survenue.');
-			}
+                formStatus = 'error';
+                formResponse = result.error || 'Une erreur est survenue.';
+                return;
+            }
 
-			console.log('Message envoyé !');
+            formStatus = 'success';
+            formResponse = m['homepage.contact.form.response.success']();
 
 			form.reset();
 		} catch (error) {
 			console.error(error);
+
+            formStatus = 'error';
+            formResponse = m['homepage.contact.form.response.error']();
 		}
 	}
 </script>
@@ -46,6 +57,16 @@
                 <textarea placeholder={m['homepage.contact.form.message']()} id="message" name="message" class="border-2 py-2 px-6 text-lg md:text-xl" required></textarea>
                 <button type="submit" class="mt-4 py-2 w-full bg-theme-grey text-xl font-medium text-theme-light rounded-full cursor-pointer border-2 border-theme-grey hover:bg-theme-light hover:text-theme-grey transition-colors duration-200 ease-in-out">{m['homepage.contact.form.submit']()}</button>
             </form>
+            {#if formResponse}
+                <p
+                    class:text-green-600={formStatus === 'success'}
+                    class:text-red-600={formStatus === 'error'}
+                    role="status"
+                    aria-live="polite"
+                >
+                    {formResponse}
+                </p>
+            {/if}
         </div>
         <img src="/images/LaBurie_Logo_Black.webp" alt="" class="h-50 object-contain" />
     </div>

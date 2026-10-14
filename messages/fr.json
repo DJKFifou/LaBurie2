@@ -48,7 +48,11 @@
 				"email": "Email",
 				"phone": "Téléphone",
 				"message": "Message",
-				"submit": "Envoyer"
+				"submit": "Envoyer",
+				"response": {
+					"success": "Message envoyé avec succès !",
+					"error": "Échec de l'envoi du message."
+				}
 			}
 		}
 	}

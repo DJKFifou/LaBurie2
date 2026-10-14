@@ -55,6 +55,14 @@
                 <input type="email" placeholder={m['homepage.contact.form.email']()} id="email" name="email" class="border-2 py-2 px-6 text-lg md:text-xl" required />
                 <input type="phone" placeholder={m['homepage.contact.form.phone']()} id="phone" name="phone" class="border-2 py-2 px-6 text-lg md:text-xl" required />
                 <textarea placeholder={m['homepage.contact.form.message']()} id="message" name="message" class="border-2 py-2 px-6 text-lg md:text-xl" required></textarea>
+                <input
+                    type="text"
+                    id="website"
+                    name="website"
+                    tabindex="-1"
+                    autocomplete="off"
+                    class="absolute w-px h-px -left-10000 overflow-hidden"
+                />
                 <button type="submit" class="mt-4 py-2 w-full bg-theme-grey text-xl font-medium text-theme-light rounded-full cursor-pointer border-2 border-theme-grey hover:bg-theme-light hover:text-theme-grey transition-colors duration-200 ease-in-out">{m['homepage.contact.form.submit']()}</button>
             </form>
             {#if formResponse}

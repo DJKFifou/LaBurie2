@@ -1,11 +1,16 @@
 import { json } from '@sveltejs/kit';
 import { env } from '$env/dynamic/private';
 import type { RequestHandler } from './$types';
+import { m } from '$lib/paraglide/messages.js';
 
 export const POST: RequestHandler = async ({ request, fetch }) => {
 	const data = await request.json();
 
-	const { name, email, phone, message } = data;
+	const { name, email, phone, message, website } = data;
+
+	if (typeof website === 'string' && website.trim() !== '') {
+		return json({ success: true });
+	}
 
 	if (
 		!name ||
@@ -65,7 +70,7 @@ export const POST: RequestHandler = async ({ request, fetch }) => {
 		return json(
 			{
 				success: false,
-				error: "Impossible d'envoyer le message."
+				error: m['homepage.contact.form.response.error']()
 			},
 			{ status: 500 }
 		);

@@ -32,6 +32,7 @@
 		<a
 			href="https://reservation.elloha.com/?idPublication=e91f5f11-7560-453d-9b21-c9fdb924680c&idoi=b7073d26-a843-4537-b5db-fa0692fe33c5"
 			class="w-fit rounded-full bg-theme-green px-14 py-2 text-theme-offWhite hover:bg-theme-offWhite hover:text-theme-green"
+            target="_blank"
 			>{m['homepage.about.link.title']()}</a
 		>
 	</div>

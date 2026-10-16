@@ -1,4 +1,4 @@
-<section class="h-screen-dvh">
+<section class="mobile-h-screen-dvh md:h-screen-dvh">
 	<img
 		src="/images/LaBurie_Background.webp"
 		alt=""

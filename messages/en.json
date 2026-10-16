@@ -6,15 +6,9 @@
 			}
 		},
 		"about": {
-			"first_block": {
-				"first_paragraph": "La Burie is a grand and charming manor house from the 19th century, carefully renovated and decorated with a mix of vintage, family, and contemporary furniture.",
-				"second_paragraph": "The guest rooms consist of two beautiful, brand-new suites on the second floor under the eaves, and a family suite on the first floor.",
-				"third_paragraph": "The property is located just outside the village of Saint-Savinien, 1.5 km from the center."
-			},
-			"second_block": {
-				"first_paragraph": "The guesthouse offers two spacious double rooms on the second floor, located under the roof, as well as a large family suite on the first floor that can accommodate up to six people.",
-				"second_paragraph": "All rooms enjoy garden views."
-			},
+			"first_paragraph": "Carefully renovated and decorated, the house harmoniously blends vintage furniture, family keepsakes and contemporary touches, creating a warm and welcoming atmosphere.",
+			"second_paragraph": "It offers three suites designed for everyone's comfort: two beautiful double bedrooms nestled under the eaves on the second floor, and a spacious family suite on the first floor that can sleep up to six people. All of them enjoy a pleasant view over the garden.",
+			"third_paragraph": "Located on the edge of the village of Saint-Savinien, just 1.5 km from the center, the house invites you to enjoy a peaceful stay, combining old-world charm with a relaxed way of life.",
 			"link": {
 				"title": "Book your stay"
 			}

@@ -2,7 +2,7 @@
     import { m } from '$lib/paraglide/messages.js';
 </script>
 
-<section class="flex flex-col md:flex-row min-h-screen-dvh items-center gap-16 pt-10 pb-20 px-5 md:px-10 lg:p-20 overflow-hidden">
+<section class="flex flex-col md:flex-row min-h-screen-dvh items-center gap-20 pt-10 pb-20 px-5 md:px-10 lg:p-20 overflow-hidden">
 	<div class="relative h-full flex-1">
 		<img
 			src="/images/LaBurie_About.webp"
@@ -18,24 +18,14 @@
 	<div class="flex flex-1 flex-col items-center justify-center gap-15 md:gap-25 text-center">
 		<div class="flex flex-col items-center gap-4 text-lg px-5 md:px-10">
 			<div class="flex flex-col items-center gap-4">
-				<hr class="my-4 w-3/5 border" />
 				<p>
-					{m['homepage.about.first_block.first_paragraph']()}
+					{m['homepage.about.first_paragraph']()}
 				</p>
 				<p>
-					{m['homepage.about.first_block.second_paragraph']()}
+					{m['homepage.about.second_paragraph']()}
 				</p>
 				<p>
-					{m['homepage.about.first_block.third_paragraph']()}
-				</p>
-			</div>
-			<div class="flex flex-col items-center gap-4">
-				<hr class="my-4 w-3/5 border" />
-				<p>
-					{m['homepage.about.second_block.first_paragraph']()}
-				</p>
-				<p>
-					{m['homepage.about.second_block.second_paragraph']()}
+					{m['homepage.about.third_paragraph']()}
 				</p>
 			</div>
 		</div>

@@ -6,15 +6,9 @@
 			}
 		},
 		"about": {
-			"first_block": {
-				"first_paragraph": "La Burie est une grande et charmante maison de maître du XIXe siècle, soigneusement rénovée et décorée avec un mélange de meubles vintage, familiaux et contemporains.",
-				"second_paragraph": "Les chambres d'hôtes se composent de deux belles suites flambant neuves au deuxième étage sous les combles, et d'une suite familiale au premier étage.",
-				"third_paragraph": "La propriété est située juste à la sortie du village de Saint-Savinien, à 1,5 km du centre."
-			},
-			"second_block": {
-				"first_paragraph": "La maison d'hôtes propose deux spacieuses chambres doubles au deuxième étage, sous le toit, ainsi qu'une grande suite familiale au premier étage pouvant accueillir jusqu'à six personnes.",
-				"second_paragraph": "Toutes les chambres ont vue sur le jardin."
-			},
+			"first_paragraph": "Soigneusement rénovée et décorée, la maison mêle avec harmonie meubles vintage, souvenirs de famille et touches contemporaines, dans une atmosphère chaleureuse.",
+			"second_paragraph": "Elle propose trois suites pensées pour le confort de chacun : deux belles chambres doubles nichées sous les toits, au deuxième étage, ainsi qu’une spacieuse suite familiale au premier étage, pouvant accueillir jusqu’à six personnes. Toutes offrent une agréable vue sur le jardin.",
+			"third_paragraph": "Située à la sortie du village de Saint-Savinien, à seulement 1,5 km du centre, la maison invite à profiter d’un séjour paisible, entre charme de l’ancien et douceur de vivre.",
 			"link": {
 				"title": "Réservez votre séjour"
 			}

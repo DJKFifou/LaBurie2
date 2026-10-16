@@ -13,6 +13,11 @@
 	height: 100dvh;
 }
 
+@utility mobile-h-screen-dvh {
+	height: 70vh;
+	height: 70dvh;
+}
+
 @utility min-h-screen-dvh {
 	min-height: 100vh;
 	min-height: 100dvh;

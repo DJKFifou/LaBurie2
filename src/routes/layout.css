@@ -1,6 +1,40 @@
 @import 'tailwindcss';
 
+@font-face {
+	font-family: DM Mono;
+	font-style: normal;
+	font-weight: 300;
+	font-display: swap;
+	src: url('/fonts/DM/DMMono-Light.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: DM Mono;
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+	src: url('/fonts/DM/DMMono-Regular.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: DM Mono;
+	font-style: normal;
+	font-weight: 500;
+	font-display: swap;
+	src: url('/fonts/DM/DMMono-Medium.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'DM Mono fallback';
+	src: local(Arial);
+	size-adjust: 112%;
+	ascent-override: normal;
+	descent-override: normal;
+	line-gap-override: normal;
+}
+
 @theme {
+    --font-dm: 'DM Mono', 'DM Mono fallback', mono;
 	--color-theme-dark: #181818;
 	--color-theme-grey: #52514d;
 	--color-theme-light: #f8f8f8;
